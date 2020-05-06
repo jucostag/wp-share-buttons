@@ -1,0 +1,272 @@
+<div id="shareButtonsWidget">
+	<ul class="primary social-networks">
+		<li class="square facebook" ng-if="featuredFacebook">
+			<a href="#" socialshare socialshare-provider="facebook" socialshare-url="{{ ogUrl | utmParams:'facebook' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Facebook">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+			</a> 
+		</li>
+
+		<li class="square twitter" ng-if="featuredTwitter">
+			<a href="#" socialshare socialshare-provider="twitter" socialshare-url="{{ ogUrl | utmParams:'twitter' }}" socialshare-text="{{ ogTitle }} - {{ ogSiteName }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Twiter"> 
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+			</a>
+		</li> 
+
+		<li class="square googleplus" ng-if="featuredGoogleplus">
+			<a href="#" socialshare socialshare-provider="google" socialshare-url="{{ ogUrl | utmParams:'googleplus' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Google +"> 
+				<i class="fa fa-google-plus" aria-hidden="true"></i>
+			</a>
+		</li> 
+
+		<li class="square whatsapp whatsapp-desktop" ng-if="featuredWhatsapp">
+			<span class="info" data-toggle="tooltip" data-placement="top" data-original-title="WhatsApp">
+				<a class="desktop-share" data-toggle="popover" href="#" title="Copie e cole esta URL no app" data-content="{{ ogUrl | utmParams:'whatsapp-desktop' }}" data-placement="bottom"> 
+					<i class="fa fa-whatsapp" aria-hidden="true"></i>
+				</a>
+			</span>
+		</li>
+
+		<li class="square whatsapp whatsapp-mobile" ng-if="featuredWhatsapp">
+			<a href="#" socialshare socialshare-provider="whatsapp" socialshare-url="{{ ogUrl | utmParams:'whatsapp-app' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="WhatsApp"> 
+				<i class="fa fa-whatsapp" aria-hidden="true"></i>
+			</a>
+		</li>
+
+		<li class="square email" ng-if="featuredEmail">
+			<a href="#" socialshare socialshare-provider="email" socialshare-body="{{ ogUrl | utmParams:'email' }}" socialshare-subject="Receitas - Voce Bonita - TV Gazeta" class="info" data-toggle="tooltip" data-placement="top" data-original-title="E-mail"> 
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+			</a>
+		</li>
+
+		<li class="square delicious" ng-if="featuredDelicious">
+				<a href="#" socialshare socialshare-provider="delicious" socialshare-url="{{ ogUrl | utmParams:'delicious' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Delicious">
+					<img src="/wp-content/plugins/wp-share-buttons/assets/icons/delicious-icon.svg">
+				</a>
+			</li> 
+
+			<li class="square digg" ng-if="featuredDigg">
+				<a href="#" socialshare socialshare-provider="digg" socialshare-url="{{ ogUrl | utmParams:'digg' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Digg">
+					<i class="fa fa-digg" aria-hidden="true"></i>
+				</a>
+			</li>
+
+			<li class="square evernote" ng-if="featuredEvernote">
+				<a href="#" socialshare socialshare-provider="evernote" socialshare-url="{{ ogUrl | utmParams:'evernote' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Evernote">
+					<img src="/wp-content/plugins/wp-share-buttons/assets/icons/evernote-icon.svg">
+				</a>
+			</li> 
+
+			<li class="square fbmessenger fbmessenger-desktop" ng-if="featuredFbmessenger">
+				<span class="info" data-toggle="tooltip" data-placement="top" data-original-title="Facebook Messenger">
+					<a class="desktop-share" data-toggle="popover" href="#" title="Copie e cole esta URL no app" data-content="{{ ogUrl | utmParams:'facebook-messenger-desktop' }}" data-placement="bottom">
+						<img src="/wp-content/plugins/wp-share-buttons/assets/icons/facebook-messenger-icon.svg">
+					</a>
+				</span>
+			</li>
+
+			<li class="square fbmessenger fbmessenger-mobile" ng-if="featuredFbmessenger">
+				<a href="#" socialshare socialshare-provider="facebook-messenger" socialshare-url="{{ ogUrl | utmParams:'facebook-messenger-app' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Facebook Messenger">
+					<img src="/wp-content/plugins/wp-share-buttons/assets/icons/facebook-messenger-icon.svg">
+				</a>
+			</li> 
+
+			<li class="square flipboard" ng-if="featuredFlipboard">
+				<a href="#" socialshare socialshare-provider="flipboard" socialshare-url="{{ ogUrl | utmParams:'flipboard' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Flipboard">
+					<img src="/wp-content/plugins/wp-share-buttons/assets/icons/flipboard-icon.svg">
+				</a>
+			</li> 
+
+			<li class="square linkedin" ng-if="featuredLinkedin">
+				<a href="#" socialshare socialshare-provider="linkedin" socialshare-url="{{ ogUrl | utmParams:'linkedin' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="LinkedIn"> 
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+				</a>
+			</li> 
+
+			<li class="square pinterest" ng-if="featuredPinterest">
+				<a href="#" socialshare socialshare-provider="pinterest" socialshare-url="{{ ogImg | utmParams:'pinterest' }}" socialshare-media="{{ ogImg | utmParams:'pinterest' }}" socialshare-text="{{ ogTitle }} - {{ ogSiteName }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Pinterest">
+					<i class="fa fa-pinterest-p" aria-hidden="true"></i>
+				</a>
+			</li> 
+
+			<li class="square pocket" ng-if="featuredPocket">
+				<a href="#" socialshare socialshare-provider="pocket" socialshare-url="{{ ogUrl | utmParams:'pocket' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Pocket"> 
+					<i class="fa fa-get-pocket" aria-hidden="true"></i>
+				</a>
+			</li> 
+
+			<li class="square skype" ng-if="featuredSkype">
+				<a href="#" socialshare socialshare-provider="skype" socialshare-url="{{ ogUrl | utmParams:'skype' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Skype"> 
+					<i class="fa fa-skype" aria-hidden="true"></i>
+				</a>
+			</li> 
+
+			<li class="square stumbleupon" ng-if="featuredStumbleupon">
+				<a href="#" socialshare socialshare-provider="stumbleupon" socialshare-url="{{ ogUrl | utmParams:'stumbleupon' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="StumbleUpon">
+					<i class="fa fa-stumbleupon" aria-hidden="true"></i>
+				</a>
+			</li> 
+
+			<li class="square tumblr" ng-if="featuredTumblr">
+				<a href="#" socialshare socialshare-provider="tumblr" socialshare-url="{{ ogUrl | utmParams:'tumblr' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Tumblr">
+					<i class="fa fa-tumblr" aria-hidden="true"></i>
+				</a>
+			</li> 
+
+			<li class="square viber viber-desktop" ng-if="featuredViber">
+				<span class="info" data-toggle="tooltip" data-placement="top" data-original-title="Viber">
+					<a class="desktop-share" data-toggle="popover" href="#" title="Copie e cole esta URL no app" data-content="{{ ogUrl | utmParams:'viber-desktop' }}" data-placement="bottom"> 
+						<img src="/wp-content/plugins/wp-share-buttons/assets/icons/viber-icon.svg">
+					</a>
+				</span>
+			</li>
+
+			<li class="square viber viber-mobile" ng-if="featuredViber">
+				<a href="#" socialshare socialshare-provider="viber" socialshare-url="{{ ogUrl | utmParams:'viber-app' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Viber">
+					<img src="/wp-content/plugins/wp-share-buttons/assets/icons/viber-icon.svg">
+				</a>
+			</li> 
+
+			<li class="square wordpress" ng-if="featuredWordpress">
+				<a href="#" socialshare socialshare-provider="wordpress" socialshare-url="{{ ogUrl | utmParams:'wordpress' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Wordpress"> 
+					<i class="fa fa-wordpress" aria-hidden="true"></i>
+				</a>
+			</li>
+
+		<li class="more" ng-show="enableToggle" slide-toggle="#moreSocialNetworks{{::$id}}"><i class="fa fa-plus-circle" aria-hidden="true"></i></li>
+	</ul>
+	<div id="moreSocialNetworks{{::$id}}" class="slideable">
+		<ul class="secondary social-networks">
+
+			<li class="square facebook" ng-if="toggleFacebook">
+				<a href="#" socialshare socialshare-provider="facebook" socialshare-url="{{ ogUrl | utmParams:'facebook' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Facebook">
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+				</a> 
+			</li>
+
+			<li class="square twitter" ng-if="toggleTwitter">
+				<a href="#" socialshare socialshare-provider="twitter" socialshare-url="{{ ogUrl | utmParams:'twitter' }}" socialshare-text="{{ ogTitle }} - {{ ogSiteName }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Twiter"> 
+					<i class="fa fa-twitter" aria-hidden="true"></i>
+				</a>
+			</li> 
+
+			<li class="square googleplus" ng-if="toggleGoogleplus">
+				<a href="#" socialshare socialshare-provider="google" socialshare-url="{{ ogUrl | utmParams:'googleplus' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Google +"> 
+					<i class="fa fa-google-plus" aria-hidden="true"></i>
+				</a>
+			</li> 
+
+			<li class="square whatsapp whatsapp-desktop" ng-if="toggleWhatsapp">
+				<span class="info" data-toggle="tooltip" data-placement="top" data-original-title="WhatsApp">
+					<a class="desktop-share" data-toggle="popover" href="#" title="Copie e cole esta URL no app" data-content="{{ ogUrl | utmParams:'whatsapp-desktop' }}" data-placement="bottom"> 
+						<i class="fa fa-whatsapp" aria-hidden="true"></i>
+					</a>
+				</span>
+			</li>
+
+			<li class="square whatsapp whatsapp-mobile" ng-if="toggleWhatsapp">
+				<a href="#" socialshare socialshare-provider="whatsapp" socialshare-url="{{ ogUrl | utmParams:'whatsapp-app' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="WhatsApp"> 
+					<i class="fa fa-whatsapp" aria-hidden="true"></i>
+				</a>
+			</li>
+
+			<li class="square email" ng-if="toggleEmail">
+				<a href="#" socialshare socialshare-provider="email" socialshare-body="{{ ogUrl | utmParams:'email' }}" socialshare-subject="Receitas - Voce Bonita - TV Gazeta" class="info" data-toggle="tooltip" data-placement="top" data-original-title="E-mail"> 
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+				</a>
+			</li>
+			<li class="square delicious" ng-if="toggleDelicious">
+				<a href="#" socialshare socialshare-provider="delicious" socialshare-url="{{ ogUrl | utmParams:'delicious' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Delicious">
+					<img src="/wp-content/plugins/wp-share-buttons/assets/icons/delicious-icon.svg">
+				</a>
+			</li> 
+
+			<li class="square digg" ng-if="toggleDigg">
+				<a href="#" socialshare socialshare-provider="digg" socialshare-url="{{ ogUrl | utmParams:'digg' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Digg">
+					<i class="fa fa-digg" aria-hidden="true"></i>
+				</a>
+			</li>
+
+			<li class="square evernote" ng-if="toggleEvernote">
+				<a href="#" socialshare socialshare-provider="evernote" socialshare-url="{{ ogUrl | utmParams:'evernote' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Evernote">
+					<img src="/wp-content/plugins/wp-share-buttons/assets/icons/evernote-icon.svg">
+				</a>
+			</li> 
+
+			<li class="square fbmessenger fbmessenger-desktop" ng-if="toggleFbmessenger">
+				<span class="info" data-toggle="tooltip" data-placement="top" data-original-title="Facebook Messenger">
+					<a class="desktop-share" data-toggle="popover" href="#" title="Copie e cole esta URL no app" data-content="{{ ogUrl | utmParams:'facebook-messenger-desktop' }}" data-placement="bottom">
+						<img src="/wp-content/plugins/wp-share-buttons/assets/icons/facebook-messenger-icon.svg">
+					</a>
+				</span>
+			</li>
+
+			<li class="square fbmessenger fbmessenger-mobile" ng-if="toggleFbmessenger">
+				<a href="#" socialshare socialshare-provider="facebook-messenger" socialshare-url="{{ ogUrl | utmParams:'facebook-messenger-app' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Facebook Messenger">
+					<img src="/wp-content/plugins/wp-share-buttons/assets/icons/facebook-messenger-icon.svg">
+				</a>
+			</li> 
+
+			<li class="square flipboard" ng-if="toggleFlipboard">
+				<a href="#" socialshare socialshare-provider="flipboard" socialshare-url="{{ ogUrl | utmParams:'flipboard' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Flipboard">
+					<img src="/wp-content/plugins/wp-share-buttons/assets/icons/flipboard-icon.svg">
+				</a>
+			</li> 
+
+			<li class="square linkedin" ng-if="toggleLinkedin">
+				<a href="#" socialshare socialshare-provider="linkedin" socialshare-url="{{ ogUrl | utmParams:'linkedin' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="LinkedIn"> 
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+				</a>
+			</li> 
+
+			<li class="square pinterest" ng-if="togglePinterest">
+				<a href="#" socialshare socialshare-provider="pinterest" socialshare-url="{{ ogImg | utmParams:'pinterest' }}" socialshare-media="{{ ogImg | utmParams:'pinterest' }}" socialshare-text="{{ ogTitle }} - {{ ogSiteName }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Pinterest">
+					<i class="fa fa-pinterest-p" aria-hidden="true"></i>
+				</a>
+			</li> 
+
+			<li class="square pocket" ng-if="togglePocket">
+				<a href="#" socialshare socialshare-provider="pocket" socialshare-url="{{ ogUrl | utmParams:'pocket' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Pocket"> 
+					<i class="fa fa-get-pocket" aria-hidden="true"></i>
+				</a>
+			</li> 
+
+			<li class="square skype" ng-if="toggleSkype">
+				<a href="#" socialshare socialshare-provider="skype" socialshare-url="{{ ogUrl | utmParams:'skype' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Skype"> 
+					<i class="fa fa-skype" aria-hidden="true"></i>
+				</a>
+			</li> 
+
+			<li class="square stumbleupon" ng-if="toggleStumbleupon">
+				<a href="#" socialshare socialshare-provider="stumbleupon" socialshare-url="{{ ogUrl | utmParams:'stumbleupon' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="StumbleUpon">
+					<i class="fa fa-stumbleupon" aria-hidden="true"></i>
+				</a>
+			</li> 
+
+			<li class="square tumblr" ng-if="toggleTumblr">
+				<a href="#" socialshare socialshare-provider="tumblr" socialshare-url="{{ ogUrl | utmParams:'tumblr' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Tumblr">
+					<i class="fa fa-tumblr" aria-hidden="true"></i>
+				</a>
+			</li> 
+
+			<li class="square viber viber-desktop" ng-if="toggleViber">
+				<span class="info" data-toggle="tooltip" data-placement="top" data-original-title="Viber">
+					<a class="desktop-share" data-toggle="popover" href="#" title="Copie e cole esta URL no app" data-content="{{ ogUrl | utmParams:'viber-desktop' }}" data-placement="bottom"> 
+						<img src="/wp-content/plugins/wp-share-buttons/assets/icons/viber-icon.svg">
+					</a>
+				</span>
+			</li>
+
+			<li class="square viber viber-mobile" ng-if="toggleViber">
+				<a href="#" socialshare socialshare-provider="viber" socialshare-url="{{ ogUrl | utmParams:'viber-app' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Viber">
+					<img src="/wp-content/plugins/wp-share-buttons/assets/icons/viber-icon.svg">
+				</a>
+			</li> 
+
+			<li class="square wordpress" ng-if="toggleWordpress">
+				<a href="#" socialshare socialshare-provider="wordpress" socialshare-url="{{ ogUrl | utmParams:'wordpress' }}" class="info" data-toggle="tooltip" data-placement="top" data-original-title="Wordpress"> 
+					<i class="fa fa-wordpress" aria-hidden="true"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>

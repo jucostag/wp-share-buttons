@@ -1,0 +1,37 @@
+{
+  "name": "ShareButtons",
+  "version": "1.0.0",
+  "description": "Enable social share buttons.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "angular-socialshare": "^2.3.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3",
+    "jquery": "^2.2.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-git": "^1.11.3",
+    "gulp-jshint": "^1.12.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.5",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "share-buttons",
+    "social-share",
+    "share"
+  ],
+  "author": "Juliana Gonçalves",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "none"
+  }
+}
